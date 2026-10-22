@@ -1,23 +1,97 @@
 aid: dexus
+
 name: Dexus
-description: 'Dexus is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Dexus is a leading Australasian fully integrated real asset group, actively managing a multi-billion dollar portfolio
+  of office, industrial, retail, healthcare and infrastructure assets. Its platform spans funds management, asset and property
+  management, real asset investment and development, with investor and tenant login portals. Surfaced via the API Evangelist
+  harvest backlog (australia-apidays-2026); no public developer API or documentation was found on dexus.com.
+
 url: https://raw.githubusercontent.com/api-evangelist/dexus/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Real Estate
+- Real Assets
+- Funds Management
+- Infrastructure
+- Property Management
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.dexus.com/content/dam/dexus/images/unclassified/dexus-logo-black.svg
+
 common:
+- type: Hosts
+  url: hosts/dexus-hosts.yml
+- type: Vendors
+  url: vendors/dexus-vendors.yml
+- type: DomainSecurity
+  url: security/dexus-domain-security.yml
 - type: Website
-  url: https://dexus.com/
+  url: https://www.dexus.com/
+- type: Blog
+  url: https://www.dexus.com/news-insights.html
+- type: Support
+  url: https://www.dexus.com/get-in-touch.html
+- type: Login
+  url: https://www.dexus.com/portals-logins/investor-login-portals.html
+- type: TermsOfService
+  url: https://www.dexus.com/general/terms-and-conditions.html
+- type: PrivacyPolicy
+  url: https://www.dexus.com/general/privacy-policy.html
+- type: LinkedIn
+  url: https://www.linkedin.com/company/dexus-group/
+- type: YouTube
+  url: https://www.youtube.com/@dexusaustralia
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: dexus.com redirects to www.dexus.com (same company, title "Dexus"); no developer portal, API docs or API reference
+    linked from the site.
+  evidence:
+  - url: https://dexus.com/
+    status: 200
+  - url: https://www.dexus.com/who-we-are.html
+    status: 200
+  - url: https://www.dexus.com/news-insights.html
+    status: 200
+  - url: https://www.dexus.com/get-in-touch.html
+    status: 200
+  - url: https://www.dexus.com/portals-logins/investor-login-portals.html
+    status: 200
+  - url: https://www.dexus.com/general/terms-and-conditions.html
+    status: 200
+  - url: https://www.dexus.com/general/privacy-policy.html
+    status: 200
+  - url: https://www.linkedin.com/company/dexus-group/
+    status: 200
+  - url: https://www.youtube.com/@dexusaustralia
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

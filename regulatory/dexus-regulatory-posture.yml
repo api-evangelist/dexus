@@ -1,0 +1,79 @@
+generated: '2026-10-21'
+method: searched
+source: https://www.dexus.com/general/privacy-policy.html
+policy_last_updated: '2025-12-05'
+jurisdictions: [Australia (Privacy Act 1988 (Cth)), New Zealand (Privacy Act 2020)]
+signals:
+  data_subject_request:
+    url: https://www.dexus.com/general/privacy-policy.html
+    section: '13. Access to and correction of your personal information'
+    channel: privacy@dexus.com (Privacy Officer)
+    rights_named: [access, correction]
+    escalation: Office of the Australian Information Commissioner / Office of the Privacy Commissioner New Zealand
+    evidence:
+    - source: https://www.dexus.com/general/privacy-policy.html
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'You have the right to access and request correction of personal information that we hold about you.'
+    - source: https://www.dexus.com/general/privacy-policy.html
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'We will provide access or make requested changes to your personal information unless there is a valid reason that applies to refuse the request, where allowed under the Australia and New Zealand Privacy Acts or other relevant law. Dexus may charge a reasonable fee for providing your personal information.'
+    - source: https://www.dexus.com/general/privacy-policy.html
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'If the complaint remains unresolved, you have the option of notifying the Office of the Australian Information Commissioner or the Office of the Privacy Commissioner New Zealand (as applicable).'
+    note: >-
+      Access and correction rights under the Australian and NZ Privacy Acts, routed to a Privacy Officer, with a
+      possible reasonable fee and identity verification. Deletion and portability are not named; no response SLA
+      is stated for access requests (complaints are acknowledged "normally 48 hours").
+  incident_notification:
+    url: https://www.dexus.com/general/privacy-policy.html
+    section: '10. Data breach notification'
+    evidence:
+    - source: https://www.dexus.com/general/privacy-policy.html
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Dexus has a Personal Data Breach Response Plan in place to manage actual or suspected data breaches. Where we assess a data breach as being notifiable under the Privacy Act 1988 (Cth) or the Privacy Act 2020 (NZ) (as applicable) we will notify the relevant Privacy Commissioner and affected individuals.'
+    note: >-
+      A stated breach-response plan and a commitment to notify regulators and affected individuals for notifiable
+      breaches under the AU NDB scheme / NZ Privacy Act. No notification timeframe is stated.
+  data_residency:
+    url: https://www.dexus.com/general/privacy-policy.html
+    section: '9. Overseas disclosures'
+    evidence:
+    - source: https://www.dexus.com/general/privacy-policy.html
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Depending on the type of service or product we provide to you, your personal information may be disclosed to our related body corporates, contractors and service providers located overseas, such as the United States, Europe and the Asia Pacific region (including, for our Australian entities, to New Zealand).'
+    note: >-
+      No residency commitment: the policy discloses that personal information may leave Australia/NZ, naming the
+      US, Europe and Asia Pacific as destination regions.
+  subprocessors:
+    url: https://www.dexus.com/general/privacy-policy.html
+    section: '8. Who we may disclose your personal information to'
+    list_published: false
+    evidence:
+    - source: https://www.dexus.com/general/privacy-policy.html
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'We hold personal information either in electronic form (where it is stored on secure servers) or hard copy form. Some personal information we collect may be held on our behalf by third parties (such as our external registry service provider).'
+    note: >-
+      Third-party processors are acknowledged by category only ("third party service providers who assist us in the
+      operation of the business", an external registry service provider); no named subprocessor list was found.
+  data_retention:
+    url: https://www.dexus.com/general/privacy-policy.html
+    section: '3. Why we collect your personal information'
+    evidence:
+    - source: https://www.dexus.com/general/privacy-policy.html
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 'Personal information collected from unsuccessful job applicants or their agents may also be retained in case a more appropriate opportunity becomes available'
+    note: >-
+      The only retention language on the page, and it is narrow: it covers job applicants and gives no period. No
+      general retention schedule or deletion/de-identification commitment is stated.
+checked_without_signal:
+- url: https://www.dexus.com/general/terms-and-conditions.html
+  http_status: 200
+  fetched: '2026-10-21'
+  note: Website terms of use; no regulatory-posture clauses (AI, accessibility, retention, residency) found.

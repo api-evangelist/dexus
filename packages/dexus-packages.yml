@@ -1,0 +1,10 @@
+generated: '2026-10-21'
+method: none
+name: Dexus packages
+note: No first-party SDK, CLI or client library found. Dexus is a real asset / funds management group with no public developer API. registry.npmjs.org/dexus -> 404; pypi.org/pypi/dexus/json -> 404; www.dexus.com/developers -> 404; the 671-URL www.dexus.com/sitemap.xml lists no developer, API or docs pages.
+checked:
+- https://registry.npmjs.org/dexus
+- https://pypi.org/pypi/dexus/json
+- https://www.dexus.com/developers
+- https://www.dexus.com/sitemap.xml
+packages: []

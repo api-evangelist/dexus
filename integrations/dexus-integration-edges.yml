@@ -1,0 +1,22 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/dexus/integrations
+- https://n8n.io/integrations/dexus/
+- https://composio.dev/toolkits/dexus
+- https://monid.ai/tools/dexus
+checked:
+- https://zapier.com/apps/dexus/integrations
+- https://www.make.com/en/integrations/dexus
+- https://n8n.io/integrations/dexus
+- https://www.workato.com/integrations/dexus
+- https://www.dexus.com/sitemap.xml
+- https://composio.dev/toolkits/dexus
+- https://monid.ai/tools/dexus
+- https://n8n.io/integrations/dexus/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Dexus publishes no developer API, integrations page or marketplace listing. The www.dexus.com sitemap (671
+  URLs) has no integrations/partners/developer page, and no automation-marketplace app exists.

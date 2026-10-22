@@ -1,0 +1,28 @@
+generated: '2026-10-21'
+method: none
+status: none
+source: https://www.dexus.com/
+summary: No official hosted, remote or local Model Context Protocol (MCP) server was found for Dexus, and
+  Dexus publishes no OpenAPI or other API contract from which a candidate tool list could be derived.
+  No tools are recorded.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+search_result:
+  official_hosted_server: none
+  preflight:
+    hosts_probed: [dexus.com, www.dexus.com, api.dexus.com]
+    mcp_verdict: absent
+    mcp_tool_table: none (no MCP docs found; no docs host exists)
+  probes:
+  - url: https://www.dexus.com/llms.txt
+    method: GET
+    status: 404
+  - url: https://dexus.com/llms.txt
+    method: GET
+    status: 404
+  web_search: Search for a Dexus MCP server or developer API returned only unrelated or third-party
+    results (Private Equity List and EODHD market-data products that cover Dexus as a subject); neither
+    is operated by Dexus.
+tools: []
